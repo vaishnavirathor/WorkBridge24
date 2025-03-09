@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+*{
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+html,
+body{
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #111;
+  color: white; /* Change text color to white */
+  cursor: pointer;
+}
+input{
+  box-sizing: border-box;
+}
+#tasklist::-webkit-scrollbar{
+display:none;
+}
