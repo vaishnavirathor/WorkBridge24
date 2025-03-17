@@ -9,10 +9,10 @@ const employees =
       "tasks": [
         {
           "name": "Alice Johnson",
-          "active": true,
-          "newTask": true,
-          "completed": false,
-          "failed": false,
+          "accepted": 2,
+          "newTask": 3,
+          "completed": 6,
+          "failed": 8,
           "taskTitle": "Design Homepage UI",
           "taskDescription": "Create a responsive homepage design for the web app.",
           "taskDate": "2024-12-30",
@@ -27,10 +27,10 @@ const employees =
       "tasks": [
         {
           "name": "John Doe",
-          "active": true,
-          "newTask": true,
-          "completed": false,
-          "failed": false,
+          "accepted": true,
+          "newTask": 3,
+          "completed": 4,
+          "failed": 1,
           "taskTitle": "API Integration",
           "taskDescription": "Integrate third-party payment gateway for the checkout flow.",
           "taskDate": "2024-12-28",
@@ -45,10 +45,10 @@ const employees =
       "tasks": [
         {
           "name": "Emma Williams",
-          "active": false,
-          "newTask": true,
-          "completed": true,
-          "failed": false,
+          "accepted": false,
+          "newTask": 7,
+          "completed": 4,
+          "failed": 2,
           "taskTitle": "Create Product Listings",
           "taskDescription": "Develop dynamic product listing pages using React.",
           "taskDate": "2024-12-20",
@@ -63,10 +63,10 @@ const employees =
       "tasks": [
         {
           "name": "Michael Brown",
-          "active": true,
-          "newTask": false,
-          "completed": false,
-          "failed": true,
+          "accepted": true,
+          "newTask": 1,
+          "completed": 2,
+          "failed": 2,
           "taskTitle": "Database Migration",
           "taskDescription": "Migrate data from MySQL to MongoDB for better scalability.",
           "taskDate": "2024-12-15",
@@ -81,10 +81,10 @@ const employees =
       "tasks": [
         {
           "name": "Sophia Lee",
-          "active": true,
-          "newTask": false,
-          "completed": true,
-          "failed": false,
+          "accepted": true,
+          "newTask": 3,
+          "completed": 0,
+          "failed": 4,
           "taskTitle": "Implement Authentication",
           "taskDescription": "Add JWT-based authentication with role-based access control.",
           "taskDate": "2024-12-22",
