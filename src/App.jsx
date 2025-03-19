@@ -10,29 +10,15 @@ const App = () => {
   const [loggedInUserData, setLoggedInUserData] = useState(null);
   const authData = useContext(AuthContext);
 
-  useEffect(() => {
-    if (!localStorage.getItem('employees')) {
-      setLocalStorage();
-      console.log("📥 Local storage data set successfully");
-    }
-
-    const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
-
-    if (loggedInUser?.role === 'employee') {
-      const storedEmployees = JSON.parse(localStorage.getItem('employees')) || [];
-      const employeeData = storedEmployees.find(e => e.email === loggedInUser.email);
-
-      if (employeeData) {
-        setLoggedInUserData(employeeData);
-        console.log("✅ Employee Data Found:", employeeData);
-      } else {
-        console.error("❗ No employee data found for logged-in user.");
-      }
-    }
-
-    setUser(loggedInUser?.role || null);
-  }, [authData]);
-
+useEffect(()=>{
+  const loggedInUser = localStorage.getItem('loggedInUser');
+  console.log(loggedInUser);
+ if(loggedInUser){
+ const userData = JSON.parse(loggedInUser);
+ setUser(userData.role)
+ setLoggedInUserData(userData.data)
+}
+})
   const handleLogin = (email, password) => {
     if (email === 'admin@me.com' && password === '123') {
       setUser('admin');
